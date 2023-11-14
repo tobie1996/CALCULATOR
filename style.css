@@ -53,18 +53,16 @@ body{
     display: flex;
     font-size: 45px;
     height: 110px;
-    transition: filter 1s;
+    transition: filter .3s;
     justify-content: center;
     width: 110px;
 }
 
-.button .function {
+.function {
     color: black;
     background: #a5a5a5;
 }
-.ac .pm .percent{
-    background: #ddcccc;
-}
+
 
 .button.operator {
     background: #ec8906;
@@ -80,4 +78,8 @@ body{
     padding-left:43px ;
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+.button:active,.button:focus {
+    filter: brightness(300%);
 }
